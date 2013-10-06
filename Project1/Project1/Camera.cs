@@ -36,6 +36,9 @@ namespace Project1
         private float znear = 10;
         private float zfar = 10000;
 
+
+        public Camera Camera { get { return this; } }
+
         public Camera(GraphicsDeviceManager graphics)
         {
             this.graphics = graphics;

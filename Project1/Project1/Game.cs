@@ -23,6 +23,9 @@ namespace Project1
         SplashScreen splashScreen = null;
         TitleScreen titleScreen = null;
         GameScreen gameScreen = null;
+
+        public Camera Camera;
+
         public KeyboardState lastState;
 
         public enum Screens { Splash, Title, Game };
