@@ -1,18 +1,457 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Framework="Microsoft.Xna.Framework" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
   <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>BugSplash.png</Source>
+      <Name>BugSplash</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\BugSplash.xnb</Output>
+      <Time>2013-10-06T16:36:01-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Arachnid.FBX</Source>
+      <Name>Arachnid</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\Arachnid.xnb</Output>
+      <Time>2011-09-28T00:34:49.204-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Arachnid_0.xml</Key>
+        <Value>2013-10-06T17:55:35.0224609-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\BACK-COL_mask_0.xnb</Request>
+      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\MID-POIN_0.xnb</Request>
+      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\BEAKTOP_mask_0.xnb</Request>
+      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\Left_JAW_mask_0.xnb</Request>
+      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\left_bea_masked_0.xnb</Request>
+      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\FRONT-LB_0.xnb</Request>
+      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\FRONT-LA_0.xnb</Request>
+      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\FRONT-RA_0.xnb</Request>
+      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\FRONT-RI_0.xnb</Request>
+      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\leftside_mask_0.xnb</Request>
+      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\FRONT-LE_0.xnb</Request>
+      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\LEFT_REA_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Bee.FBX</Source>
+      <Name>Bee</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\Bee.xnb</Output>
+      <Time>2009-09-30T20:00:32.717-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Bee_0.xml</Key>
+        <Value>2013-10-06T17:55:38.8193359-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\262D1902\Bee.fbm\gb3_0.xnb</Request>
+      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\262D1902\Bee.fbm\gb1_0.xnb</Request>
+      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\262D1902\Bee.fbm\gb2_0.xnb</Request>
+      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\262D1902\Bee.fbm\gb4_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>DeckTurrentGun.FBX</Source>
+      <Name>DeckTurrentGun</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\DeckTurrentGun.xnb</Output>
+      <Time>2008-09-24T23:43:40.494-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\DeckTurrentGun_0.xml</Key>
+        <Value>2013-10-06T17:55:40.0537109-04:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>GrassField.FBX</Source>
+      <Name>GrassField</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\GrassField.xnb</Output>
+      <Time>2009-10-06T20:50:39.804-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\GrassField_0.xml</Key>
+        <Value>2013-10-06T17:55:40.1474609-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\E3841BFA\GrassField.fbm\grass1024_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Sky.FBX</Source>
+      <Name>Sky</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\Sky.xnb</Output>
+      <Time>2009-10-06T22:43:10.23-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Sky_0.xml</Key>
+        <Value>2013-10-06T17:55:40.6474609-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\272C192D\Sky.fbm\sky_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Arachnid.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Arachnid_0.xml</Output>
+      <Time>2011-09-28T00:34:49.204-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\BACK-COL_mask.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\BACK-COL_mask_0.xnb</Output>
+      <Time>2013-10-06T17:55:34.1787109-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\MID-POIN.JPG</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\MID-POIN_0.xnb</Output>
+      <Time>2013-10-06T17:55:34.1787109-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\BEAKTOP_mask.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\BEAKTOP_mask_0.xnb</Output>
+      <Time>2013-10-06T17:55:34.1943359-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\Left_JAW_mask.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\Left_JAW_mask_0.xnb</Output>
+      <Time>2013-10-06T17:55:34.1943359-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\left_bea_masked.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\left_bea_masked_0.xnb</Output>
+      <Time>2013-10-06T17:55:34.1943359-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\FRONT-LB.JPG</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\FRONT-LB_0.xnb</Output>
+      <Time>2013-10-06T17:55:34.1943359-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\FRONT-LA.JPG</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\FRONT-LA_0.xnb</Output>
+      <Time>2013-10-06T17:55:34.1943359-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\FRONT-RA.JPG</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\FRONT-RA_0.xnb</Output>
+      <Time>2013-10-06T17:55:34.1943359-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\FRONT-RI.JPG</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\FRONT-RI_0.xnb</Output>
+      <Time>2013-10-06T17:55:34.1943359-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\leftside_mask.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\leftside_mask_0.xnb</Output>
+      <Time>2013-10-06T17:55:34.1787109-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\FRONT-LE.JPG</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\FRONT-LE_0.xnb</Output>
+      <Time>2013-10-06T17:55:34.2099609-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\LEFT_REA.JPG</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\LEFT_REA_0.xnb</Output>
+      <Time>2013-10-06T17:55:34.2099609-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Bee.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Bee_0.xml</Output>
+      <Time>2009-09-30T20:00:32.717-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\262D1902\Bee.fbm\gb3.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\262D1902\Bee.fbm\gb3_0.xnb</Output>
+      <Time>2013-10-06T17:55:35.6162109-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\262D1902\Bee.fbm\gb1.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\262D1902\Bee.fbm\gb1_0.xnb</Output>
+      <Time>2013-10-06T17:55:35.6162109-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\262D1902\Bee.fbm\gb2.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\262D1902\Bee.fbm\gb2_0.xnb</Output>
+      <Time>2013-10-06T17:55:35.6162109-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\262D1902\Bee.fbm\gb4.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\262D1902\Bee.fbm\gb4_0.xnb</Output>
+      <Time>2013-10-06T17:55:35.6162109-04:00</Time>
+    </Item>
+    <Item>
+      <Source>DeckTurrentGun.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\DeckTurrentGun_0.xml</Output>
+      <Time>2008-09-24T23:43:40.494-04:00</Time>
+    </Item>
+    <Item>
+      <Source>GrassField.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\GrassField_0.xml</Output>
+      <Time>2009-10-06T20:50:39.804-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\E3841BFA\GrassField.fbm\grass1024.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\E3841BFA\GrassField.fbm\grass1024_0.xnb</Output>
+      <Time>2013-10-06T17:55:40.1318359-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sky.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Sky_0.xml</Output>
+      <Time>2009-10-06T22:43:10.23-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\272C192D\Sky.fbm\sky.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\272C192D\Sky.fbm\sky_0.xnb</Output>
+      <Time>2013-10-06T17:55:40.6474609-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>c:\users\sean\documents\visual studio 2010\Projects\Project1\Project1\Project1Content\</RootDirectory>
-      <LoggerRootDirectory>c:\users\sean\documents\visual studio 2010\Projects\Project1\Project1\Project1\</LoggerRootDirectory>
-      <IntermediateDirectory>c:\users\sean\documents\visual studio 2010\Projects\Project1\Project1\Project1Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>c:\users\sean\documents\visual studio 2010\Projects\Project1\Project1\Project1\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\sean\Desktop\Project1\Project1\Project1Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\sean\Desktop\Project1\Project1\Project1\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\sean\Desktop\Project1\Project1\Project1Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
         <Value>2013-08-28T16:40:34.9521484-04:00</Value>

@@ -95,7 +95,7 @@ namespace Project1
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            splashScreen.LoadContent();
             // TODO: use this.Content to load your game content here
         }
 
@@ -135,9 +135,15 @@ namespace Project1
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            graphics.GraphicsDevice.Clear(Color.Black);
 
             screen.Draw(gameTime);
+            spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
+            screen.DrawSprites(gameTime, spriteBatch);
+            spriteBatch.End();
+                              
+
+
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);

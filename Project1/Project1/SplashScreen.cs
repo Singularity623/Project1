@@ -15,7 +15,10 @@ namespace Project1
     public class SplashScreen : Screen
     {
         private Texture2D _splash;
-        private double _time;
+
+        private double _fadeInTime;
+        private double _displayTime;
+        private double _fadeOutTime;
 
         public SplashScreen(Game game) : base(game)
         {
@@ -28,6 +31,7 @@ namespace Project1
         }
         public override void LoadContent()
         {
+            _splash = Game.Content.Load<Texture2D>("BugSplash");
             base.LoadContent();
         }
         public override void Activate()
@@ -40,6 +44,7 @@ namespace Project1
         }
         public override void Update(GameTime gameTime)
         {
+            base.Update(gameTime);
             if (Game.lastState.IsKeyDown(Keys.G))
             {
                 Game.SetScreen(Game.Screens.Game);
@@ -48,16 +53,19 @@ namespace Project1
             {
                 Game.SetScreen(Game.Screens.Title);
             }
-            base.Update(gameTime);
+
         }
-        public override void Draw(GameTime gameTime)
-        {
-            Game.Graphics.GraphicsDevice.Clear(Color.CadetBlue);
-            base.Draw(gameTime);
-        }
+
         public override void DrawSprites(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            base.DrawSprites(gameTime, spriteBatch);
+            int width = Game.GraphicsDevice.Viewport.Width;
+            int height = Game.GraphicsDevice.Viewport.Height;
+
+            int imageWidth = (int)((16.0 / 9.0) * height);
+            int tooWide = imageWidth - width;
+
+            Rectangle rect = new Rectangle(-tooWide / 2, 0, imageWidth, height);
+            spriteBatch.Draw(_splash, rect, Color.White);
         }
     }
 }
