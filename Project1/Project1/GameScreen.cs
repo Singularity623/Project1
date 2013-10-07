@@ -14,19 +14,24 @@ namespace Project1
 {
     public class GameScreen : Screen
     {
+        private Swarm swarm;
+        private Game game;
+
         public GameScreen(Game game)
             : base(game)
         {
-
+            this.game = game;
+            swarm = new Swarm( game, Matrix.Identity );
         }
 
         public override void Initialize()
         {
             base.Initialize();
         }
-        public override void LoadContent()
+        public override void LoadContent( ContentManager content )
         {
-            base.LoadContent();
+            swarm.LoadContent(content);
+            base.LoadContent(content);
         }
         public override void Activate()
         {
@@ -46,11 +51,13 @@ namespace Project1
             {
                 Game.SetScreen(Game.Screens.Title);
             }
+            swarm.Update( gameTime );
             base.Update(gameTime);
         }
         public override void Draw(GameTime gameTime)
         {
             Game.Graphics.GraphicsDevice.Clear(Color.Black);
+            swarm.Draw( Game.Graphics, gameTime );
             base.Draw(gameTime);
         }
         public override void DrawSprites(GameTime gameTime, SpriteBatch spriteBatch)

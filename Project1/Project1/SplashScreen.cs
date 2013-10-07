@@ -29,10 +29,10 @@ namespace Project1
         {
             base.Initialize();
         }
-        public override void LoadContent()
+        public override void LoadContent( ContentManager content )
         {
             _splash = Game.Content.Load<Texture2D>("BugSplash");
-            base.LoadContent();
+            base.LoadContent(content);
         }
         public override void Activate()
         {

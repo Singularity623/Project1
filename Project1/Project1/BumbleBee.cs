@@ -12,7 +12,7 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Project1
 {
-    class BumbleBee : Entity
+    public class BumbleBee : AttackingEntity
     {
         public BumbleBee(Game game)
             : base(game)
@@ -20,20 +20,21 @@ namespace Project1
 
         }
 
-        protected override void Update(GameTime gameTime)
+        public override void LoadContent( ContentManager content )
+        {
+            model = content.Load<Model>( "Bee" );
+            base.LoadContent( content );
+        }
+
+        public override void Update( GameTime gameTime )
         {
 
             base.Update(gameTime);
         }
 
-        protected override void Draw(GraphicsDeviceManager graphics, GameTime gameTime)
+        protected override void DrawModel( GraphicsDeviceManager graphics, Model model, Matrix world )
         {
-        }
-
-        protected override void DrawModel(GraphicsDeviceManager graphics, Model model, Matrix world)
-        {
-            base.DrawModel(graphics, model, world);
-
+            base.DrawModel( graphics, model, world );
         }
     }
 }

@@ -13,35 +13,29 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Project1
 {
-    class Arachnid : Entity
+    public class Arachnid : AttackingEntity
     {
         public Arachnid(Game game)
             : base(game)
         {
-
+            int x = 10;
         }
 
-        protected override void Update(GameTime gameTime)
+        public override void LoadContent( ContentManager content )
+        {
+            model = content.Load<Model>( "Arachnid" );
+            base.LoadContent( content );
+        }
+
+        public override void Update( GameTime gameTime )
         {
 
             base.Update(gameTime);
         }
 
-        protected override void Draw(GraphicsDeviceManager graphics, GameTime gameTime)
+        protected override void DrawModel( GraphicsDeviceManager graphics, Model model, Matrix world )
         {
+            base.DrawModel( graphics, model, world );
         }
-
-        protected override void DrawModel(GraphicsDeviceManager graphics, Model model, Matrix world)
-        {
-            base.DrawModel(graphics, model, world);
-
-        }
-
-
-
-
-
-
-
     }
 }

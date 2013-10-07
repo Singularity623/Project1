@@ -24,9 +24,9 @@ namespace Project1
         {
             base.Initialize();
         }
-        public override void LoadContent()
+        public override void LoadContent( ContentManager content )
         {
-            base.LoadContent();
+            base.LoadContent(content);
         }
         public override void Activate()
         {

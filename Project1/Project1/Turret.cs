@@ -20,22 +20,21 @@ namespace Project1
 
         }
 
-        protected override void Update(GameTime gameTime)
+        public override void Update(GameTime gameTime)
         {
 
             base.Update(gameTime);
         }
 
-        protected override void Draw(GraphicsDeviceManager graphics, GameTime gameTime)
+        public override void LoadContent( ContentManager content )
         {
+            base.LoadContent( content );
         }
 
         protected override void DrawModel(GraphicsDeviceManager graphics, Model model, Matrix world)
         {
             base.DrawModel(graphics, model, world);
 
-
         }
-
     }
 }

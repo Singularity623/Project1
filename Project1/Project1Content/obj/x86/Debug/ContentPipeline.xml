@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\BugSplash.xnb</Output>
-      <Time>2013-10-06T16:36:01-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\BugSplash.xnb</Output>
+      <Time>2013-10-06T20:12:18.5487172-04:00</Time>
     </Item>
     <Item>
       <Source>Arachnid.FBX</Source>
@@ -16,24 +16,24 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\Arachnid.xnb</Output>
-      <Time>2011-09-28T00:34:49.204-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\Arachnid.xnb</Output>
+      <Time>2013-10-06T20:12:18.4197098-04:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Arachnid_0.xml</Key>
-        <Value>2013-10-06T17:55:35.0224609-04:00</Value>
+        <Value>2013-10-06T22:06:39.5961466-04:00</Value>
       </Dependency>
-      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\BACK-COL_mask_0.xnb</Request>
-      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\MID-POIN_0.xnb</Request>
-      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\BEAKTOP_mask_0.xnb</Request>
-      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\Left_JAW_mask_0.xnb</Request>
-      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\left_bea_masked_0.xnb</Request>
-      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\FRONT-LB_0.xnb</Request>
-      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\FRONT-LA_0.xnb</Request>
-      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\FRONT-RA_0.xnb</Request>
-      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\FRONT-RI_0.xnb</Request>
-      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\leftside_mask_0.xnb</Request>
-      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\FRONT-LE_0.xnb</Request>
-      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\LEFT_REA_0.xnb</Request>
+      <Request>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\BACK-COL_mask_0.xnb</Request>
+      <Request>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\MID-POIN_0.xnb</Request>
+      <Request>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\BEAKTOP_mask_0.xnb</Request>
+      <Request>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\Left_JAW_mask_0.xnb</Request>
+      <Request>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\left_bea_masked_0.xnb</Request>
+      <Request>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\FRONT-LB_0.xnb</Request>
+      <Request>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\FRONT-LA_0.xnb</Request>
+      <Request>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\FRONT-RA_0.xnb</Request>
+      <Request>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\FRONT-RI_0.xnb</Request>
+      <Request>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\leftside_mask_0.xnb</Request>
+      <Request>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\FRONT-LE_0.xnb</Request>
+      <Request>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\LEFT_REA_0.xnb</Request>
     </Item>
     <Item>
       <Source>Bee.FBX</Source>
@@ -41,16 +41,16 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\Bee.xnb</Output>
-      <Time>2009-09-30T20:00:32.717-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\Bee.xnb</Output>
+      <Time>2013-10-06T20:12:18.5437169-04:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Bee_0.xml</Key>
-        <Value>2013-10-06T17:55:38.8193359-04:00</Value>
+        <Value>2013-10-06T22:06:46.5185426-04:00</Value>
       </Dependency>
-      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\262D1902\Bee.fbm\gb3_0.xnb</Request>
-      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\262D1902\Bee.fbm\gb1_0.xnb</Request>
-      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\262D1902\Bee.fbm\gb2_0.xnb</Request>
-      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\262D1902\Bee.fbm\gb4_0.xnb</Request>
+      <Request>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\43071D33\Bee.fbm\gb3_0.xnb</Request>
+      <Request>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\43071D33\Bee.fbm\gb1_0.xnb</Request>
+      <Request>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\43071D33\Bee.fbm\gb2_0.xnb</Request>
+      <Request>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\43071D33\Bee.fbm\gb4_0.xnb</Request>
     </Item>
     <Item>
       <Source>DeckTurrentGun.FBX</Source>
@@ -58,11 +58,11 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\DeckTurrentGun.xnb</Output>
-      <Time>2008-09-24T23:43:40.494-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\DeckTurrentGun.xnb</Output>
+      <Time>2013-10-06T20:12:18.6057204-04:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\DeckTurrentGun_0.xml</Key>
-        <Value>2013-10-06T17:55:40.0537109-04:00</Value>
+        <Value>2013-10-06T22:06:48.4986558-04:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -71,13 +71,13 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\GrassField.xnb</Output>
-      <Time>2009-10-06T20:50:39.804-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\GrassField.xnb</Output>
+      <Time>2013-10-06T20:12:18.6167211-04:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\GrassField_0.xml</Key>
-        <Value>2013-10-06T17:55:40.1474609-04:00</Value>
+        <Value>2013-10-06T22:06:48.6546648-04:00</Value>
       </Dependency>
-      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\E3841BFA\GrassField.fbm\grass1024_0.xnb</Request>
+      <Request>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\1DC4202B\GrassField.fbm\grass1024_0.xnb</Request>
     </Item>
     <Item>
       <Source>Sky.FBX</Source>
@@ -85,23 +85,23 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\Sky.xnb</Output>
-      <Time>2009-10-06T22:43:10.23-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\Sky.xnb</Output>
+      <Time>2013-10-06T20:12:18.6257216-04:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Sky_0.xml</Key>
-        <Value>2013-10-06T17:55:40.6474609-04:00</Value>
+        <Value>2013-10-06T22:06:49.6217201-04:00</Value>
       </Dependency>
-      <Request>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\272C192D\Sky.fbm\sky_0.xnb</Request>
+      <Request>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\44061D5E\Sky.fbm\sky_0.xnb</Request>
     </Item>
     <Item>
       <Source>Arachnid.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Arachnid_0.xml</Output>
-      <Time>2011-09-28T00:34:49.204-04:00</Time>
+      <Time>2013-10-06T20:12:18.4197098-04:00</Time>
     </Item>
     <Item>
-      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\BACK-COL_mask.png</Source>
+      <Source>obj\x86\Debug\FBX\DC621F41\Arachnid.fbm\BACK-COL_mask.png</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -113,11 +113,11 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\BACK-COL_mask_0.xnb</Output>
-      <Time>2013-10-06T17:55:34.1787109-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\BACK-COL_mask_0.xnb</Output>
+      <Time>2013-10-06T22:06:38.6950951-04:00</Time>
     </Item>
     <Item>
-      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\MID-POIN.JPG</Source>
+      <Source>obj\x86\Debug\FBX\DC621F41\Arachnid.fbm\MID-POIN.JPG</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -129,11 +129,11 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\MID-POIN_0.xnb</Output>
-      <Time>2013-10-06T17:55:34.1787109-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\MID-POIN_0.xnb</Output>
+      <Time>2013-10-06T22:06:38.6860946-04:00</Time>
     </Item>
     <Item>
-      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\BEAKTOP_mask.png</Source>
+      <Source>obj\x86\Debug\FBX\DC621F41\Arachnid.fbm\BEAKTOP_mask.png</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -145,11 +145,11 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\BEAKTOP_mask_0.xnb</Output>
-      <Time>2013-10-06T17:55:34.1943359-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\BEAKTOP_mask_0.xnb</Output>
+      <Time>2013-10-06T22:06:38.7010954-04:00</Time>
     </Item>
     <Item>
-      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\Left_JAW_mask.png</Source>
+      <Source>obj\x86\Debug\FBX\DC621F41\Arachnid.fbm\Left_JAW_mask.png</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -161,11 +161,11 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\Left_JAW_mask_0.xnb</Output>
-      <Time>2013-10-06T17:55:34.1943359-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\Left_JAW_mask_0.xnb</Output>
+      <Time>2013-10-06T22:06:38.7060957-04:00</Time>
     </Item>
     <Item>
-      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\left_bea_masked.png</Source>
+      <Source>obj\x86\Debug\FBX\DC621F41\Arachnid.fbm\left_bea_masked.png</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -177,11 +177,11 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\left_bea_masked_0.xnb</Output>
-      <Time>2013-10-06T17:55:34.1943359-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\left_bea_masked_0.xnb</Output>
+      <Time>2013-10-06T22:06:38.6980953-04:00</Time>
     </Item>
     <Item>
-      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\FRONT-LB.JPG</Source>
+      <Source>obj\x86\Debug\FBX\DC621F41\Arachnid.fbm\FRONT-LB.JPG</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -193,11 +193,11 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\FRONT-LB_0.xnb</Output>
-      <Time>2013-10-06T17:55:34.1943359-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\FRONT-LB_0.xnb</Output>
+      <Time>2013-10-06T22:06:38.7170964-04:00</Time>
     </Item>
     <Item>
-      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\FRONT-LA.JPG</Source>
+      <Source>obj\x86\Debug\FBX\DC621F41\Arachnid.fbm\FRONT-LA.JPG</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -209,11 +209,11 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\FRONT-LA_0.xnb</Output>
-      <Time>2013-10-06T17:55:34.1943359-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\FRONT-LA_0.xnb</Output>
+      <Time>2013-10-06T22:06:38.7130961-04:00</Time>
     </Item>
     <Item>
-      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\FRONT-RA.JPG</Source>
+      <Source>obj\x86\Debug\FBX\DC621F41\Arachnid.fbm\FRONT-RA.JPG</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -225,11 +225,11 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\FRONT-RA_0.xnb</Output>
-      <Time>2013-10-06T17:55:34.1943359-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\FRONT-RA_0.xnb</Output>
+      <Time>2013-10-06T22:06:38.7250968-04:00</Time>
     </Item>
     <Item>
-      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\FRONT-RI.JPG</Source>
+      <Source>obj\x86\Debug\FBX\DC621F41\Arachnid.fbm\FRONT-RI.JPG</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -241,11 +241,11 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\FRONT-RI_0.xnb</Output>
-      <Time>2013-10-06T17:55:34.1943359-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\FRONT-RI_0.xnb</Output>
+      <Time>2013-10-06T22:06:38.7210966-04:00</Time>
     </Item>
     <Item>
-      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\leftside_mask.png</Source>
+      <Source>obj\x86\Debug\FBX\DC621F41\Arachnid.fbm\leftside_mask.png</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -257,11 +257,11 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\leftside_mask_0.xnb</Output>
-      <Time>2013-10-06T17:55:34.1787109-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\leftside_mask_0.xnb</Output>
+      <Time>2013-10-06T22:06:38.6910949-04:00</Time>
     </Item>
     <Item>
-      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\FRONT-LE.JPG</Source>
+      <Source>obj\x86\Debug\FBX\DC621F41\Arachnid.fbm\FRONT-LE.JPG</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -273,11 +273,11 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\FRONT-LE_0.xnb</Output>
-      <Time>2013-10-06T17:55:34.2099609-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\FRONT-LE_0.xnb</Output>
+      <Time>2013-10-06T22:06:38.7330973-04:00</Time>
     </Item>
     <Item>
-      <Source>obj\x86\Debug\FBX\AA931B10\Arachnid.fbm\LEFT_REA.JPG</Source>
+      <Source>obj\x86\Debug\FBX\DC621F41\Arachnid.fbm\LEFT_REA.JPG</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -289,18 +289,18 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\AA931B10\Arachnid.fbm\LEFT_REA_0.xnb</Output>
-      <Time>2013-10-06T17:55:34.2099609-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\DC621F41\Arachnid.fbm\LEFT_REA_0.xnb</Output>
+      <Time>2013-10-06T22:06:38.7380976-04:00</Time>
     </Item>
     <Item>
       <Source>Bee.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Bee_0.xml</Output>
-      <Time>2009-09-30T20:00:32.717-04:00</Time>
+      <Time>2013-10-06T20:12:18.5437169-04:00</Time>
     </Item>
     <Item>
-      <Source>obj\x86\Debug\FBX\262D1902\Bee.fbm\gb3.jpg</Source>
+      <Source>obj\x86\Debug\FBX\43071D33\Bee.fbm\gb3.jpg</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -312,11 +312,11 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\262D1902\Bee.fbm\gb3_0.xnb</Output>
-      <Time>2013-10-06T17:55:35.6162109-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\43071D33\Bee.fbm\gb3_0.xnb</Output>
+      <Time>2013-10-06T22:06:41.6342632-04:00</Time>
     </Item>
     <Item>
-      <Source>obj\x86\Debug\FBX\262D1902\Bee.fbm\gb1.jpg</Source>
+      <Source>obj\x86\Debug\FBX\43071D33\Bee.fbm\gb1.jpg</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -328,11 +328,11 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\262D1902\Bee.fbm\gb1_0.xnb</Output>
-      <Time>2013-10-06T17:55:35.6162109-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\43071D33\Bee.fbm\gb1_0.xnb</Output>
+      <Time>2013-10-06T22:06:41.6372634-04:00</Time>
     </Item>
     <Item>
-      <Source>obj\x86\Debug\FBX\262D1902\Bee.fbm\gb2.jpg</Source>
+      <Source>obj\x86\Debug\FBX\43071D33\Bee.fbm\gb2.jpg</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -344,11 +344,11 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\262D1902\Bee.fbm\gb2_0.xnb</Output>
-      <Time>2013-10-06T17:55:35.6162109-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\43071D33\Bee.fbm\gb2_0.xnb</Output>
+      <Time>2013-10-06T22:06:41.6402636-04:00</Time>
     </Item>
     <Item>
-      <Source>obj\x86\Debug\FBX\262D1902\Bee.fbm\gb4.jpg</Source>
+      <Source>obj\x86\Debug\FBX\43071D33\Bee.fbm\gb4.jpg</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -360,25 +360,25 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\262D1902\Bee.fbm\gb4_0.xnb</Output>
-      <Time>2013-10-06T17:55:35.6162109-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\43071D33\Bee.fbm\gb4_0.xnb</Output>
+      <Time>2013-10-06T22:06:41.6442638-04:00</Time>
     </Item>
     <Item>
       <Source>DeckTurrentGun.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\DeckTurrentGun_0.xml</Output>
-      <Time>2008-09-24T23:43:40.494-04:00</Time>
+      <Time>2013-10-06T20:12:18.6057204-04:00</Time>
     </Item>
     <Item>
       <Source>GrassField.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\GrassField_0.xml</Output>
-      <Time>2009-10-06T20:50:39.804-04:00</Time>
+      <Time>2013-10-06T20:12:18.6167211-04:00</Time>
     </Item>
     <Item>
-      <Source>obj\x86\Debug\FBX\E3841BFA\GrassField.fbm\grass1024.jpg</Source>
+      <Source>obj\x86\Debug\FBX\1DC4202B\GrassField.fbm\grass1024.jpg</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -390,18 +390,18 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\E3841BFA\GrassField.fbm\grass1024_0.xnb</Output>
-      <Time>2013-10-06T17:55:40.1318359-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\1DC4202B\GrassField.fbm\grass1024_0.xnb</Output>
+      <Time>2013-10-06T22:06:48.6356637-04:00</Time>
     </Item>
     <Item>
       <Source>Sky.FBX</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Sky_0.xml</Output>
-      <Time>2009-10-06T22:43:10.23-04:00</Time>
+      <Time>2013-10-06T20:12:18.6257216-04:00</Time>
     </Item>
     <Item>
-      <Source>obj\x86\Debug\FBX\272C192D\Sky.fbm\sky.jpg</Source>
+      <Source>obj\x86\Debug\FBX\44061D5E\Sky.fbm\sky.jpg</Source>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Parameters>
@@ -413,8 +413,8 @@
         <Data Key="PremultiplyAlpha" Type="bool">true</Data>
       </Parameters>
       <Options>None</Options>
-      <Output>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\272C192D\Sky.fbm\sky_0.xnb</Output>
-      <Time>2013-10-06T17:55:40.6474609-04:00</Time>
+      <Output>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\FBX\44061D5E\Sky.fbm\sky_0.xnb</Output>
+      <Time>2013-10-06T22:06:49.6067192-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -422,10 +422,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\sean\Desktop\Project1\Project1\Project1Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\sean\Desktop\Project1\Project1\Project1\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\sean\Desktop\Project1\Project1\Project1Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\sean\Desktop\Project1\Project1\Project1\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -454,7 +454,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2013-08-28T16:40:34.9521484-04:00</Value>
+        <Value>2013-09-02T22:01:56.7115525-04:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

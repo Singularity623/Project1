@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Project1
 {
-    class Camera
+    public class Camera
     {
         /// <summary>
         /// The eye position in space
@@ -36,8 +36,23 @@ namespace Project1
         private float znear = 10;
         private float zfar = 10000;
 
+        #region Properties
+        public Matrix View
+        {
+            get
+            {
+                return view;
+            }
+        }
 
-        public Camera Camera { get { return this; } }
+        public Matrix Projection
+        {
+            get
+            {
+                return projection;
+            }
+        }
+        #endregion
 
         public Camera(GraphicsDeviceManager graphics)
         {

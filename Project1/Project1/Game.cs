@@ -47,6 +47,7 @@ namespace Project1
             gameScreen = new GameScreen(this);
 
             screen = splashScreen;
+            Camera = new Camera( graphics );
             
         }
 
@@ -98,7 +99,8 @@ namespace Project1
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            splashScreen.LoadContent();
+            splashScreen.LoadContent(Content);
+            gameScreen.LoadContent( Content );
             // TODO: use this.Content to load your game content here
         }
 

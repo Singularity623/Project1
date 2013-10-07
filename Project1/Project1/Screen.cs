@@ -28,7 +28,7 @@ namespace Project1
         {
 
         }
-        public virtual void LoadContent()
+        public virtual void LoadContent(ContentManager content)
         {
 
         }

@@ -12,37 +12,88 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Project1
 {
-    class Entity
+    public class Entity
     {
-        private Game game;
+        #region Private Members
+        protected Game game;
+        protected Vector3 position = Vector3.Zero;
+        protected float speed;
+        protected Quaternion orientation = Quaternion.CreateFromAxisAngle( new Vector3(0,0,1), 0);
+        protected Model model;
+        #endregion
 
+        #region Properties
+        public Game Game
+        {
+            get
+            {
+                return game;
+            }
+        }
+        public Vector3 Position
+        {
+            get
+            {
+                return position;
+            }
+            set
+            {
+                position = value;
+            }
+        }
+        public Matrix Transform
+        {
+            get
+            {
+                return Matrix.CreateFromQuaternion( orientation ) *
+                Matrix.CreateTranslation( position );
+            }
+        }
+        public Model Model
+        {
+            get
+            {
+                return model;
+            }
+        }
+        #endregion Properties
 
-        public Game Game { get { return game; } }
-
-        public Entity(Game game)
+        public Entity( Game game )
         {
             this.game = game;
         }
 
+        public void Draw( GraphicsDeviceManager graphics, GameTime gameTime )
+        {
+            DrawModel( graphics, model, Transform );
+        }
 
-        protected virtual void LoadContent(ContentManager content)
+        #region Protected Methods
+        public virtual void LoadContent( ContentManager content )
         {
         }
 
-        protected virtual void Update(GameTime gameTime)
+        public virtual void Update( GameTime gameTime )
         {
         }
 
-        protected virtual void Draw(GraphicsDeviceManager graphics, GameTime gameTime)
-        { 
-        }
-
-
-        protected virtual void DrawModel(GraphicsDeviceManager graphics, Model model, Matrix world)
+        protected virtual void DrawModel( GraphicsDeviceManager graphics, Model model, Matrix world )
         {
             Matrix[] transforms = new Matrix[model.Bones.Count];
-            model.CopyAbsoluteBoneTransformsTo(transforms);
-        }
+            model.CopyAbsoluteBoneTransformsTo( transforms );
 
+            foreach(ModelMesh mesh in model.Meshes)
+            {
+                foreach(BasicEffect effect in mesh.Effects)
+                {
+                    effect.EnableDefaultLighting();
+                    effect.World = transforms[mesh.ParentBone.Index] * world;
+                    effect.View = game.Camera.View;
+                    effect.Projection = game.Camera.Projection;
+                }
+                mesh.Draw();
+            }
+        }
+        #endregion
     }
 }

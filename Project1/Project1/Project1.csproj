@@ -108,6 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arachnid.cs" />
+    <Compile Include="AttackingEntity.cs" />
     <Compile Include="BumbleBee.cs" />
     <Compile Include="Camera.cs" />
     <Compile Include="Entity.cs" />
@@ -117,6 +118,7 @@
     <Compile Include="Game.cs" />
     <Compile Include="Screen.cs" />
     <Compile Include="SplashScreen.cs" />
+    <Compile Include="Swarm.cs" />
     <Compile Include="TitleScreen.cs" />
     <Compile Include="Turret.cs" />
   </ItemGroup>
