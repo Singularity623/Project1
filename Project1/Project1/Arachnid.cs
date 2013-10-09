@@ -13,12 +13,11 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Project1
 {
-    public class Arachnid : AttackingEntity
+    public class Arachnid : Entity
     {
         public Arachnid(Game game)
             : base(game)
         {
-            int x = 10;
         }
 
         public override void LoadContent( ContentManager content )
@@ -35,7 +34,7 @@ namespace Project1
 
         protected override void DrawModel( GraphicsDeviceManager graphics, Model model, Matrix world )
         {
-            base.DrawModel( graphics, model, world );
+            base.DrawModel( graphics, model, Matrix.CreateScale(0.5f) * world );
         }
     }
 }

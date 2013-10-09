@@ -21,6 +21,7 @@ namespace Project1
         private Grass field;
         private Sky sky;
 
+        private BatRigid Bat;
 
         public GameScreen(Game game)
             : base(game)
@@ -29,7 +30,9 @@ namespace Project1
             sky = new Sky(game);
             swarm = new Swarm(game, Matrix.Identity);
             field = new Grass(game);
+            Bat = new BatRigid(game);
             camera = Game.Camera;
+
             //camera.UseChaseCamera = true;
         }
 
@@ -41,8 +44,10 @@ namespace Project1
         public override void LoadContent(ContentManager content)
         {
             player.LoadContent(content);
+            swarm.LoadContent(content);
             sky.LoadContent(Game.GetContent);
             field.LoadContent(Game.GetContent);
+            Bat.LoadContent(content);
             base.LoadContent(content);
         }
         public override void Activate()
@@ -74,6 +79,8 @@ namespace Project1
                 Game.SetScreen(Game.Screens.Title);
             }
 
+            Bat.Update(gameTime);
+            swarm.Update(gameTime);
             base.Update(gameTime);
         }
         public override void Draw(GameTime gameTime)
@@ -82,6 +89,7 @@ namespace Project1
             swarm.Draw(Game.Graphics, gameTime);
             sky.Draw(Game.Graphics, gameTime);
             field.Draw(Game.Graphics, gameTime);
+            Bat.Draw(Game.Graphics, gameTime);
             base.Draw(gameTime);
         }
         public override void DrawSprites(GameTime gameTime, SpriteBatch spriteBatch)

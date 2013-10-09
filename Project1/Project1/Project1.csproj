@@ -109,7 +109,7 @@
   <ItemGroup>
     <Compile Include="Arachnid.cs" />
     <Compile Include="AttackingEntity.cs" />
-    <Compile Include="BumbleBee.cs" />
+    <Compile Include="BatRigid.cs" />
     <Compile Include="Camera.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="GameScreen.cs" />

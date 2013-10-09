@@ -16,7 +16,7 @@ namespace Project1
     {
         #region Private Members
         protected Game game;
-        protected Vector3 position = Vector3.Zero;
+        protected Vector3 position = new Vector3 (0,100,0);
         protected float speed;
         protected Quaternion orientation = Quaternion.CreateFromAxisAngle( new Vector3(0,0,1), 0);
         protected Model model;

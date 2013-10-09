@@ -10,7 +10,7 @@ namespace Project1
     public class Swarm
     {
         private Game game;
-        private LinkedList<AttackingEntity> monsters = new LinkedList<AttackingEntity>();
+        private LinkedList<Entity> monsters = new LinkedList<Entity>();
 
         public Swarm(Game game, Matrix location)
         {
@@ -23,7 +23,7 @@ namespace Project1
 
         public void Draw(GraphicsDeviceManager graphics, GameTime gametime)
         {
-            foreach(AttackingEntity monster in monsters)
+            foreach(Entity monster in monsters)
             {
                 monster.Draw( graphics, gametime );
             }
@@ -31,7 +31,7 @@ namespace Project1
 
         public void LoadContent(ContentManager content)
         {
-            foreach(AttackingEntity monster in monsters)
+            foreach(Entity monster in monsters)
             {
                 monster.LoadContent( content );
             }
@@ -39,7 +39,7 @@ namespace Project1
 
         public void Update( GameTime gameTime )
         {
-            foreach(AttackingEntity monster in monsters)
+            foreach(Entity monster in monsters)
             {
                 monster.Update( gameTime );
             }

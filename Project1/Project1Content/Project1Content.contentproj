@@ -54,11 +54,6 @@
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>
-    <Compile Include="Bee.FBX">
-      <Name>Bee</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-    </Compile>
     <Compile Include="DeckTurrentGun.FBX">
       <Name>DeckTurrentGun</Name>
       <Importer>FbxImporter</Importer>
@@ -71,6 +66,13 @@
     </Compile>
     <Compile Include="Sky.FBX">
       <Name>Sky</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bat-rigid.FBX">
+      <Name>Bat-rigid</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
     </Compile>
