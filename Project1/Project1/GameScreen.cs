@@ -33,7 +33,7 @@ namespace Project1
             Bat = new BatRigid(game);
             camera = Game.Camera;
 
-            //camera.UseChaseCamera = true;
+            camera.UseChaseCamera = true;
         }
 
         public override void Initialize()
@@ -65,7 +65,7 @@ namespace Project1
 
             camera.Center = player.Position;
 
-            camera.DesiredEye = Vector3.Transform(new Vector3(0, 318, -1677), player.Transform);
+            camera.DesiredEye = Vector3.Transform(new Vector3(0,0,0), player.Transform);
             camera.DesiredUp = player.Transform.Up;
 
             camera.Update(gameTime);
@@ -74,9 +74,23 @@ namespace Project1
             {
                 Game.SetScreen(Game.Screens.Splash);
             }
-            if (Game.lastState.IsKeyDown(Keys.T))
+            else if (Game.lastState.IsKeyDown(Keys.T))
             {
                 Game.SetScreen(Game.Screens.Title);
+            }
+
+            // Control turret rotation
+            if (Game.lastState.IsKeyDown(Keys.Left))
+            {
+                player.TurnRate = -1;
+            }
+            else if (Game.lastState.IsKeyDown(Keys.Right))
+            {
+                player.TurnRate = 1;
+            }
+            else
+            {
+                player.TurnRate = 0;
             }
 
             Bat.Update(gameTime);
@@ -86,10 +100,10 @@ namespace Project1
         public override void Draw(GameTime gameTime)
         {
             player.Draw(Game.Graphics, gameTime);
-            swarm.Draw(Game.Graphics, gameTime);
+            //swarm.Draw(Game.Graphics, gameTime);
             sky.Draw(Game.Graphics, gameTime);
             field.Draw(Game.Graphics, gameTime);
-            Bat.Draw(Game.Graphics, gameTime);
+            //Bat.Draw(Game.Graphics, gameTime);
             base.Draw(gameTime);
         }
         public override void DrawSprites(GameTime gameTime, SpriteBatch spriteBatch)

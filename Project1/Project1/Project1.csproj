@@ -108,7 +108,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arachnid.cs" />
-    <Compile Include="AttackingEntity.cs" />
     <Compile Include="BatRigid.cs" />
     <Compile Include="Camera.cs" />
     <Compile Include="Entity.cs" />

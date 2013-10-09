@@ -26,10 +26,14 @@ namespace Project1
         /// </summary>
         Quaternion orientation = Quaternion.Identity;
 
+        Quaternion gunOrientation = Quaternion.Identity;
+
         /// <summary>
-        /// model for the xwing
+        /// model for the turret
         /// </summary>
         private Model model;
+
+        private ModelBone gun;
 
         private Cue engineSound = null;
 
@@ -59,10 +63,6 @@ namespace Project1
         /// Maximum thrust (cm/sec^2)
         /// </summary>
         private const float MaxThrust = 2940;
-
-        private int wing1;          // Index to the wing 1 bone
-        private int wing2;          // Index to the wing 2 bone
-        private float wingAngle = 0f; // Current wing deployment angle
 
         private Vector3[] laserLocs = { new Vector3(-492.673f, 164.817f, 376.025f),
             new Vector3(492.217f, -142.531f, 379.140f),
@@ -121,7 +121,7 @@ namespace Project1
         public float BankRate { get { return bankRate; } set { bankRate = value; } }
         public float Fire { get { return fire; } set { fire = value; } }
         /// <summary>
-        /// Access to the underlying Xwing model
+        /// Access to the underlying turret model
         /// </summary>
         public Model Model { get { return model; } }
 
@@ -141,8 +141,9 @@ namespace Project1
         public void LoadContent(ContentManager content)
         {
             model = content.Load<Model>("DeckTurrentGun");
-           // wing1 = model.Bones.IndexOf(model.Bones["Wing1"]);
-           // wing2 = model.Bones.IndexOf(model.Bones["Wing2"]);
+
+            gun = model.Bones["GunMain"];
+            gunOrientation = Quaternion.CreateFromRotationMatrix(gun.Transform);
         }
 
         #endregion
@@ -156,23 +157,7 @@ namespace Project1
         /// <param name="gameTime"></param>
         public void Update(GameTime gameTime)
         {
-            float wingDeployTime = 2.0f;        // Seconds
-           // float acceleration = thrust * MaxThrust - Drag * speed;
             float delta = (float)gameTime.ElapsedGameTime.TotalSeconds;
-            //speed += acceleration * (float)gameTime.ElapsedGameTime.TotalSeconds;
-
-            if (deployed && wingAngle < 0.20f)
-            {
-                wingAngle += (float)(0.20 * gameTime.ElapsedGameTime.TotalSeconds / wingDeployTime);
-                if (wingAngle > 0.20f)
-                    wingAngle = 0.20f;
-            }
-            else if (!deployed && wingAngle > 0)
-            {
-                wingAngle -= (float)(0.20 * gameTime.ElapsedGameTime.TotalSeconds / wingDeployTime);
-                if (wingAngle < 0)
-                    wingAngle = 0;
-            }
 
            /* Matrix transform = Matrix.CreateRotationZ(bank) * 
                 Matrix.CreateRotationX(elevation) *
@@ -193,16 +178,13 @@ namespace Project1
             //
 
             float turnAngle = turnRate * MaxTurnRate * delta;
-            //float bankTemp = bankRate * MaxBankRate - bank;
-            //bank += bankTemp * delta;
 
-            orientation *= Quaternion.CreateFromAxisAngle(new Vector3(0, 0, 1), -turnAngle) *
-                           Quaternion.CreateFromAxisAngle(new Vector3(0, 1, 0), turnAngle);
-            orientation *= Quaternion.CreateFromAxisAngle(new Vector3(1, 0, 0),
-                           pitchRate * MaxPitchRate * delta);
-            orientation.Normalize();
+            gunOrientation *= Quaternion.CreateFromAxisAngle(new Vector3(0, 0, 1), -turnAngle);
+            gunOrientation.Normalize();
 
+            gun.Transform = Matrix.CreateFromQuaternion(gunOrientation);
 
+            /*
             //
             // Position updates
             //
@@ -213,7 +195,7 @@ namespace Project1
             Matrix transform = Matrix.CreateFromQuaternion(orientation);
 
             Vector3 directedThrust = Vector3.TransformNormal(new Vector3(0, 0, 1), transform);
-            position += directedThrust * speed * delta;
+            position += directedThrust * speed * delta;*/
 
 
         }
@@ -233,6 +215,14 @@ namespace Project1
             }
         }
 
+        public Matrix GunTransform
+        {
+            get
+            {
+                return Matrix.CreateFromQuaternion(gunOrientation);
+            }
+        }
+
         /// <summary>
         /// This function is called to draw this game component.
         /// </summary>
@@ -247,9 +237,6 @@ namespace Project1
         {
             Matrix[] transforms = new Matrix[model.Bones.Count];
             model.CopyAbsoluteBoneTransformsTo(transforms);
-
-            //transforms[wing1] = Matrix.CreateRotationY(wingAngle) * transforms[wing1];
-            //transforms[wing2] = Matrix.CreateRotationY(-wingAngle) * transforms[wing2];
 
             foreach (ModelMesh mesh in model.Meshes)
             {
