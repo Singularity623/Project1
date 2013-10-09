@@ -14,23 +14,35 @@ namespace Project1
 {
     public class GameScreen : Screen
     {
+        private Camera camera;
         private Swarm swarm;
-        private Game game;
+
+        private Turret player;
+        private Grass field;
+        private Sky sky;
+
 
         public GameScreen(Game game)
             : base(game)
         {
-            this.game = game;
-            swarm = new Swarm( game, Matrix.Identity );
+            player = new Turret(game);
+            sky = new Sky(game);
+            swarm = new Swarm(game, Matrix.Identity);
+            field = new Grass(game);
+            camera = Game.Camera;
+            //camera.UseChaseCamera = true;
         }
 
         public override void Initialize()
         {
+
             base.Initialize();
         }
-        public override void LoadContent( ContentManager content )
+        public override void LoadContent(ContentManager content)
         {
-            swarm.LoadContent(content);
+            player.LoadContent(content);
+            sky.LoadContent(Game.GetContent);
+            field.LoadContent(Game.GetContent);
             base.LoadContent(content);
         }
         public override void Activate()
@@ -43,6 +55,16 @@ namespace Project1
         }
         public override void Update(GameTime gameTime)
         {
+            player.Update(gameTime);
+
+
+            camera.Center = player.Position;
+
+            camera.DesiredEye = Vector3.Transform(new Vector3(0, 318, -1677), player.Transform);
+            camera.DesiredUp = player.Transform.Up;
+
+            camera.Update(gameTime);
+
             if (Game.lastState.IsKeyDown(Keys.S))
             {
                 Game.SetScreen(Game.Screens.Splash);
@@ -51,18 +73,19 @@ namespace Project1
             {
                 Game.SetScreen(Game.Screens.Title);
             }
-            swarm.Update( gameTime );
+
             base.Update(gameTime);
         }
         public override void Draw(GameTime gameTime)
         {
-            Game.Graphics.GraphicsDevice.Clear(Color.Black);
-            swarm.Draw( Game.Graphics, gameTime );
+            player.Draw(Game.Graphics, gameTime);
+            swarm.Draw(Game.Graphics, gameTime);
+            sky.Draw(Game.Graphics, gameTime);
+            field.Draw(Game.Graphics, gameTime);
             base.Draw(gameTime);
         }
         public override void DrawSprites(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            
             base.DrawSprites(gameTime, spriteBatch);
         }
     }

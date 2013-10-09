@@ -16,11 +16,12 @@ namespace Project1
     {
         private Texture2D _splash;
 
-        private double _fadeInTime;
-        private double _displayTime;
-        private double _fadeOutTime;
+        private double fadeInTime;
+        private double displayTime;
+        private double fadeOutTime;
 
-        public SplashScreen(Game game) : base(game)
+        public SplashScreen(Game game)
+            : base(game)
         {
 
         }
@@ -29,7 +30,7 @@ namespace Project1
         {
             base.Initialize();
         }
-        public override void LoadContent( ContentManager content )
+        public override void LoadContent(ContentManager content)
         {
             _splash = Game.Content.Load<Texture2D>("BugSplash");
             base.LoadContent(content);
@@ -45,13 +46,10 @@ namespace Project1
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
-            if (Game.lastState.IsKeyDown(Keys.G))
+            displayTime += gameTime.ElapsedGameTime.TotalSeconds;
+            if (displayTime > 3)
             {
                 Game.SetScreen(Game.Screens.Game);
-            }
-            if (Game.lastState.IsKeyDown(Keys.T))
-            {
-                Game.SetScreen(Game.Screens.Title);
             }
 
         }

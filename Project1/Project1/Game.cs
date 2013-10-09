@@ -19,26 +19,32 @@ namespace Project1
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        private Camera camera;
+
         Screen screen = null;
         SplashScreen splashScreen = null;
         TitleScreen titleScreen = null;
         GameScreen gameScreen = null;
 
-        public Camera Camera;
-
         public KeyboardState lastState;
 
         public enum Screens { Splash, Title, Game };
 
-
+        public ContentManager GetContent { get { return Content; } }
 
         public GraphicsDeviceManager Graphics { get { return graphics; } }
+
+        public Camera Camera { get { return camera; } }
 
 
         public Game()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+            this.IsMouseVisible = true;
+
+            camera = new Camera(graphics);
 
             lastState = Keyboard.GetState();
 
@@ -47,7 +53,7 @@ namespace Project1
             gameScreen = new GameScreen(this);
 
             screen = splashScreen;
-            Camera = new Camera( graphics );
+
             
         }
 
@@ -59,14 +65,17 @@ namespace Project1
             {
                 case Screens.Splash:
                     screen = splashScreen;
+                    this.IsMouseVisible = true;
                     break;
 
                 case Screens.Title:
                     screen = titleScreen;
+                    this.IsMouseVisible = true;
                     break;
 
                 case Screens.Game:
                     screen = gameScreen;
+                    this.IsMouseVisible = false;
                     break;
 
             }
@@ -86,6 +95,13 @@ namespace Project1
             // TODO: Add your initialization logic here
             //gameScreen.Initialize();
             //titleScreen.Initialize();
+            camera.Initialize();
+            camera.Eye = new Vector3(500, 500, 500);
+
+
+            // TODO: Add your initialization logic here
+            titleScreen.Initialize();
+            gameScreen.Initialize();
 
 
             base.Initialize();
@@ -143,9 +159,11 @@ namespace Project1
             graphics.GraphicsDevice.Clear(Color.Black);
 
             screen.Draw(gameTime);
-            spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
+
+            spriteBatch.Begin();
             screen.DrawSprites(gameTime, spriteBatch);
             spriteBatch.End();
+            GraphicsDevice.DepthStencilState = DepthStencilState.Default;
                               
 
 

@@ -3,7 +3,7 @@
   <Asset Type="Graphics:NodeContent">
     <Name>RootNode</Name>
     <Identity>
-      <SourceFilename>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1Content\DeckTurrentGun.FBX</SourceFilename>
+      <SourceFilename>C:\Users\sean\Project1.git\trunk\Project1\Project1Content\DeckTurrentGun.FBX</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
@@ -110,7 +110,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>BarrelColor</Name>
       <Identity>
-        <SourceFilename>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1Content\DeckTurrentGun.FBX</SourceFilename>
+        <SourceFilename>C:\Users\sean\Project1.git\trunk\Project1\Project1Content\DeckTurrentGun.FBX</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -124,7 +124,7 @@
     <Resource ID="#Resource2" Type="Graphics:BasicMaterialContent">
       <Name>BodyColor</Name>
       <Identity>
-        <SourceFilename>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1Content\DeckTurrentGun.FBX</SourceFilename>
+        <SourceFilename>C:\Users\sean\Project1.git\trunk\Project1\Project1Content\DeckTurrentGun.FBX</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -138,7 +138,7 @@
     <Resource ID="#Resource3" Type="Graphics:BasicMaterialContent">
       <Name>BaseColor</Name>
       <Identity>
-        <SourceFilename>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1Content\DeckTurrentGun.FBX</SourceFilename>
+        <SourceFilename>C:\Users\sean\Project1.git\trunk\Project1\Project1Content\DeckTurrentGun.FBX</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>

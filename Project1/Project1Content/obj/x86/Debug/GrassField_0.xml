@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>Plane01</Name>
     <Identity>
-      <SourceFilename>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1Content\GrassField.FBX</SourceFilename>
+      <SourceFilename>C:\Users\sean\Project1.git\trunk\Project1\Project1Content\GrassField.FBX</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>1 0 0 0 0 2.83276934E-16 -1 0 0 1 2.83276934E-16 0 7.24718E-05 0 0.000506043434 1</Transform>
@@ -26,7 +26,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>01 - Default</Name>
       <Identity>
-        <SourceFilename>C:\Users\kathy\Documents\GitHub\Project1\Project1\Project1Content\GrassField.FBX</SourceFilename>
+        <SourceFilename>C:\Users\sean\Project1.git\trunk\Project1\Project1Content\GrassField.FBX</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>
@@ -47,6 +47,6 @@
     </Resource>
   </Resources>
   <ExternalReferences>
-    <ExternalReference ID="#External1" TargetType="Graphics:TextureContent">FBX\1DC4202B\GrassField.fbm\grass1024.jpg</ExternalReference>
+    <ExternalReference ID="#External1" TargetType="Graphics:TextureContent">FBX\141D1CA6\GrassField.fbm\grass1024.jpg</ExternalReference>
   </ExternalReferences>
 </XnaContent>
