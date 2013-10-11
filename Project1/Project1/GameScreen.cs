@@ -22,6 +22,8 @@ namespace Project1
         private Sky sky;
 
         private BatRigid Bat;
+        private float lastFireTime;
+
 
         public GameScreen(Game game)
             : base(game)
@@ -91,6 +93,13 @@ namespace Project1
             else
             {
                 player.TurnRate = 0;
+            }
+
+            //fire
+            if (Game.lastState.IsKeyDown(Keys.Space))
+            {
+                player.FireLaser();
+                lastFireTime = 0;
             }
 
             Bat.Update(gameTime);
