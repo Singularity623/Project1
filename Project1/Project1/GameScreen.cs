@@ -18,7 +18,7 @@ namespace Project1
         private Swarm swarm;
 
         private Turret player;
-        private Grass field;
+       // private Grass field;
         private Sky sky;
 
         private BatRigid Bat;
@@ -29,7 +29,7 @@ namespace Project1
             player = new Turret(game);
             sky = new Sky(game);
             swarm = new Swarm(game, Matrix.Identity);
-            field = new Grass(game);
+           // field = new Grass(game);
             Bat = new BatRigid(game);
             camera = Game.Camera;
 
@@ -46,7 +46,7 @@ namespace Project1
             player.LoadContent(content);
             swarm.LoadContent(content);
             sky.LoadContent(Game.GetContent);
-            field.LoadContent(Game.GetContent);
+            //field.LoadContent(Game.GetContent);
             Bat.LoadContent(content);
             base.LoadContent(content);
         }
@@ -65,7 +65,7 @@ namespace Project1
 
             camera.Center = player.Position;
 
-            camera.DesiredEye = Vector3.Transform(new Vector3(0,0,0), player.Transform);
+            camera.DesiredEye = Vector3.Transform(new Vector3(1200,315,0), player.Transform);
             camera.DesiredUp = player.Transform.Up;
 
             camera.Update(gameTime);
@@ -102,7 +102,7 @@ namespace Project1
             player.Draw(Game.Graphics, gameTime);
             //swarm.Draw(Game.Graphics, gameTime);
             sky.Draw(Game.Graphics, gameTime);
-            field.Draw(Game.Graphics, gameTime);
+            //field.Draw(Game.Graphics, gameTime);
             //Bat.Draw(Game.Graphics, gameTime);
             base.Draw(gameTime);
         }
