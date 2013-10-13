@@ -109,7 +109,7 @@ namespace Project1
         public override void Draw(GameTime gameTime)
         {
             player.Draw(Game.Graphics, gameTime);
-            //swarm.Draw(Game.Graphics, gameTime);
+            swarm.Draw(Game.Graphics, gameTime);
             sky.Draw(Game.Graphics, gameTime);
             //field.Draw(Game.Graphics, gameTime);
             //Bat.Draw(Game.Graphics, gameTime);

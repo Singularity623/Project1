@@ -79,6 +79,10 @@ namespace Project1
             RightWing1.Transform = Matrix.CreateRotationY(-angle1) * RW1Flap;
             RightWing2.Transform = Matrix.CreateRotationY(-angle2) * RW2Flap;
 
+            // Control movement
+            Vector3 directedThrust = Vector3.TransformNormal( new Vector3( 0, 0, 1 ), Transform );
+            position += directedThrust * speed * (float)gameTime.ElapsedGameTime.TotalSeconds;
+
             base.Update(gameTime);
 
         }

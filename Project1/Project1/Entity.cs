@@ -17,9 +17,11 @@ namespace Project1
         #region Private Members
         protected Game game;
         protected Vector3 position = new Vector3 (0,100,0);
-        protected float speed;
-        protected Quaternion orientation = Quaternion.CreateFromAxisAngle( new Vector3(0,0,1), 0);
+        protected Matrix rotation = Matrix.Identity;
+        protected float speed = 50;
+        protected Quaternion orientation = Quaternion.CreateFromAxisAngle( new Vector3(0,1,0), (float)Math.PI/2);
         protected Model model;
+        private int spawnPosition = -1;
         #endregion
 
         #region Properties
@@ -41,12 +43,35 @@ namespace Project1
                 position = value;
             }
         }
+        public Matrix Rotation
+        {
+            get
+            {
+                return rotation;
+            }
+            set
+            {
+                rotation = value;
+            }
+        }
+        public Quaternion Orientation
+        {
+            get
+            {
+                return orientation;
+            }
+            set
+            {
+                orientation = value;
+            }
+        }
         public Matrix Transform
         {
             get
             {
                 return Matrix.CreateFromQuaternion( orientation ) *
-                Matrix.CreateTranslation( position );
+                    Matrix.CreateTranslation(position) *
+                    rotation;
             }
         }
         public Model Model
@@ -54,6 +79,17 @@ namespace Project1
             get
             {
                 return model;
+            }
+        }
+        public int SpawnPosition
+        {
+            get
+            {
+                return spawnPosition;
+            }
+            set
+            {
+                spawnPosition = value;
             }
         }
         #endregion Properties

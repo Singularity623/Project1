@@ -34,7 +34,7 @@ namespace Project1
 
         protected override void DrawModel( GraphicsDeviceManager graphics, Model model, Matrix world )
         {
-            base.DrawModel( graphics, model, Matrix.CreateScale(0.5f) * world );
+            base.DrawModel( graphics, model, /*Matrix.CreateScale(0.75f) **/ world );
         }
     }
 }

@@ -45,7 +45,7 @@ namespace Project1
         /// </summary>
         private float speed = 0;
 
-        private LaserFire laserFire;
+        //private LaserFire laserFire;
 
         private Vector3 laserLoc;
 
@@ -98,7 +98,7 @@ namespace Project1
         public Turret(Game game)
         {
             this.game = game;
-            laserFire = new LaserFire(game);
+            //laserFire = new LaserFire(game);
         }
         /// <summary>
         /// This function is called to load content into this component
@@ -112,7 +112,7 @@ namespace Project1
             gun = model.Bones["GunMain"];
             gunOrientation = Quaternion.CreateFromRotationMatrix(gun.Transform);
 
-            laserFire.LoadContent(content);
+            //laserFire.LoadContent(content);
             laserLoc = gun.Transform.Translation;
         }
 
@@ -174,7 +174,7 @@ namespace Project1
         }
 
         public void FireLaser()
-        {
+        {/*
             Vector3 position = Vector3.Transform(laserLoc, Transform);
             Matrix orientation = Transform;
             orientation.Translation = Vector3.Zero;
@@ -182,7 +182,7 @@ namespace Project1
             Vector3 direction = Vector3.TransformNormal(new Vector3(0, 0, 1), orientation);
 
             laserFire.FireLaser(speed, position, orientation);
-            //game.SoundBank.PlayCue("tx0_fire1");
+            //game.SoundBank.PlayCue("tx0_fire1");*/
         }
 
         private void DrawModel(Matrix world)
