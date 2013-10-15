@@ -116,6 +116,7 @@ namespace Project1
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             splashScreen.LoadContent(Content);
+            titleScreen.LoadContent(Content);
             gameScreen.LoadContent( Content );
             // TODO: use this.Content to load your game content here
         }

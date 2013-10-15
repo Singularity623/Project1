@@ -14,6 +14,8 @@ namespace Project1
 {
     public class TitleScreen : Screen
     {
+        private Texture2D _splash;
+
         public TitleScreen(Game game)
             : base(game)
         {
@@ -26,6 +28,7 @@ namespace Project1
         }
         public override void LoadContent( ContentManager content )
         {
+            _splash = Game.Content.Load<Texture2D>("BugSplash");
             base.LoadContent(content);
         }
         public override void Activate()
@@ -42,10 +45,6 @@ namespace Project1
             {
                 Game.SetScreen(Game.Screens.Game);
             }
-            if (Game.lastState.IsKeyDown(Keys.S))
-            {
-                Game.SetScreen(Game.Screens.Splash);
-            }
             base.Update(gameTime);
         }
         public override void Draw(GameTime gameTime)
@@ -55,7 +54,15 @@ namespace Project1
         }
         public override void DrawSprites(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            
+            int width = Game.GraphicsDevice.Viewport.Width;
+            int height = Game.GraphicsDevice.Viewport.Height;
+
+            int imageWidth = (int)((16.0 / 9.0) * height);
+            int tooWide = imageWidth - width;
+
+            Rectangle rect = new Rectangle(-tooWide / 2, 0, imageWidth, height);
+            spriteBatch.Draw(_splash, rect, Color.White);
+   
             base.DrawSprites(gameTime, spriteBatch);
         }
 

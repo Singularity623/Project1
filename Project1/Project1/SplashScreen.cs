@@ -16,9 +16,7 @@ namespace Project1
     {
         private Texture2D _splash;
 
-        private double fadeInTime;
         private double displayTime;
-        private double fadeOutTime;
 
         public SplashScreen(Game game)
             : base(game)
@@ -49,7 +47,7 @@ namespace Project1
             displayTime += gameTime.ElapsedGameTime.TotalSeconds;
             if (displayTime > 3)
             {
-                Game.SetScreen(Game.Screens.Game);
+                Game.SetScreen(Game.Screens.Title);
             }
 
         }
