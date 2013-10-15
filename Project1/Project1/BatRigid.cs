@@ -87,6 +87,27 @@ namespace Project1
 
         }
 
+        public override Entity Clone( Vector3 position )
+        {
+            BatRigid clone = new BatRigid( this.Game );
+
+            clone.model = this.model;
+
+            clone.LeftWing1 = this.LeftWing1;
+            clone.LW1Flap = this.LW1Flap;
+            clone.LeftWing2 = this.LeftWing2;
+            clone.LW2Flap = this.LW2Flap;
+            clone.RightWing1 = this.RightWing1;
+            clone.RW1Flap = this.RW1Flap;
+            clone.RightWing2 = this.RightWing2;
+            clone.RW2Flap = this.RW2Flap;
+
+            clone.Position = position;
+            clone.Rotation = this.Rotation;
+            clone.SpawnPosition = this.SpawnPosition;
+            return clone;
+        }
+
         protected override void DrawModel(GraphicsDeviceManager graphics, Model model, Matrix world)
         {
             base.DrawModel(graphics, model, Matrix.CreateScale(15) * world);

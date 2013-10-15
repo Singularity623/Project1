@@ -18,7 +18,7 @@ namespace Project1
         protected Game game;
         protected Vector3 position = new Vector3 (0,100,0);
         protected Matrix rotation = Matrix.Identity;
-        protected float speed = 50;
+        protected float speed = 200;
         protected Quaternion orientation = Quaternion.CreateFromAxisAngle( new Vector3(0,1,0), (float)Math.PI/2);
         protected Model model;
         private int spawnPosition = -1;
@@ -92,6 +92,17 @@ namespace Project1
                 spawnPosition = value;
             }
         }
+        public float Speed
+        {
+            get
+            {
+                return speed;
+            }
+            set
+            {
+                speed = value;
+            }
+        }
         #endregion Properties
 
         public Entity( Game game )
@@ -111,6 +122,11 @@ namespace Project1
 
         public virtual void Update( GameTime gameTime )
         {
+        }
+
+        public virtual Entity Clone(Vector3 position)
+        {
+            return this;
         }
 
         protected virtual void DrawModel( GraphicsDeviceManager graphics, Model model, Matrix world )

@@ -23,6 +23,13 @@ namespace Project1
     {
         private Game game;
         private LinkedList<Entity> monsters = new LinkedList<Entity>();
+        private int spawnedMonsters = 3;
+        private bool isDefeated = false;
+
+        /// <summary>
+        /// How many monsters will the swarm spawn before it is defeated.
+        /// </summary>
+        private int monsterLimit = 20;
 
         /// <summary>
         /// How far away from the target we draw the monsters.
@@ -43,6 +50,24 @@ namespace Project1
             set
             {
                 distance = value;
+            }
+        }
+        public int MonsterLimit
+        {
+            get
+            {
+                return monsterLimit;
+            }
+            set
+            {
+                monsterLimit = value;
+            }
+        }
+        public bool IsDefeated
+        {
+            get
+            {
+                return isDefeated;
             }
         }
 
@@ -90,9 +115,34 @@ namespace Project1
 
         public void Update( GameTime gameTime )
         {
-            foreach(Entity monster in monsters)
+            for( LinkedListNode<Entity> monsterNode = monsters.First; monsterNode != null; )
             {
-                monster.Update( gameTime );
+                LinkedListNode<Entity> nextNode = monsterNode.Next;
+                monsterNode.Value.Update( gameTime );
+
+                if(monsterNode.Value.Position.X > 100)
+                {
+                    // Remove monster, and create new one, if applicable
+                    monsters.Remove( monsterNode );
+                    if(spawnedMonsters < monsterLimit)
+                    {
+                        BatRigid testBat = new BatRigid( this.game );
+                        Entity clone;
+                        if(monsterNode.Value.GetType() == testBat.GetType())
+                        {
+                            clone = monsterNode.Value.Clone( new Vector3( -distance, 300, 0 ) );       
+                        }
+                        else
+                        {
+                            clone = monsterNode.Value.Clone( new Vector3( -distance, 0, 0 ) );
+                        }
+                        clone.Speed = monsterNode.Value.Speed + 100;
+                        monsters.AddLast( clone );
+                        spawnedMonsters++;
+                    }
+                }
+
+                monsterNode = nextNode;
             }
         }
 

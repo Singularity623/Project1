@@ -28,13 +28,25 @@ namespace Project1
 
         public override void Update( GameTime gameTime )
         {
+            Vector3 directedThrust = Vector3.TransformNormal( new Vector3( 0, 0, 1 ), Transform );
+            position += directedThrust * speed * (float)gameTime.ElapsedGameTime.TotalSeconds;
 
             base.Update(gameTime);
         }
 
+        public override Entity Clone( Vector3 position )
+        {
+            Arachnid clone = new Arachnid( this.Game );
+            clone.model = this.model;
+            clone.Position = position;
+            clone.Rotation = this.Rotation;
+            clone.SpawnPosition = this.SpawnPosition;
+            return clone;
+        }
+
         protected override void DrawModel( GraphicsDeviceManager graphics, Model model, Matrix world )
         {
-            base.DrawModel( graphics, model, /*Matrix.CreateScale(0.75f) **/ world );
+            base.DrawModel( graphics, model, world );
         }
     }
 }
