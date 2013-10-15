@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+
 
 namespace Project1
 {
@@ -28,11 +29,18 @@ namespace Project1
 
         Quaternion gunOrientation = Quaternion.Identity;
 
+        Quaternion barrelOrientation = Quaternion.Identity;
+
+        Quaternion bulletOrientation = Quaternion.Identity;
+
+        private float turnAngle;
+
         /// <summary>
         /// model for the turret
         /// </summary>
         private Model model;
 
+        private ModelBone barrel;
         private ModelBone gun;
 
         /// <summary>
@@ -47,14 +55,13 @@ namespace Project1
 
         //private LaserFire laserFire;
 
-        private Vector3 laserLoc;
-
-
         /// <summary>
         /// The current turning rate in radians per second
         /// Effectively the azimuth change rate
         /// </summary>
         private float turnRate = 0;
+
+        private float angle = 0f;
 
         private float pitchRate = 0;
 
@@ -72,6 +79,10 @@ namespace Project1
 
         private bool banking = false;
 
+        private LaserFire laserFire;
+
+        private Vector3 laserLoc;
+
         #endregion
 
         #region properties
@@ -86,6 +97,7 @@ namespace Project1
         public bool Banking { get { return banking; } set { banking = value; } }
         public Vector3 Position { get { return position; } set { position = value; } }
         public float PitchRate { get { return pitchRate; } set { pitchRate = value; } }
+        public float Angle { get { return angle; } }
         /// <summary>
         /// Access to the underlying turret model
         /// </summary>
@@ -98,7 +110,8 @@ namespace Project1
         public Turret(Game game)
         {
             this.game = game;
-            //laserFire = new LaserFire(game);
+            laserFire = new LaserFire(game);
+            
         }
         /// <summary>
         /// This function is called to load content into this component
@@ -112,8 +125,10 @@ namespace Project1
             gun = model.Bones["GunMain"];
             gunOrientation = Quaternion.CreateFromRotationMatrix(gun.Transform);
 
-            //laserFire.LoadContent(content);
-            laserLoc = gun.Transform.Translation;
+            barrel = model.Bones["Barrel"];
+
+            laserFire.LoadContent(content);
+            
         }
 
         #endregion
@@ -131,13 +146,20 @@ namespace Project1
             //
             // Orientation updates
             //
-
-            float turnAngle = turnRate * MaxTurnRate * delta;
+            turnAngle = turnRate * MaxTurnRate * delta;
 
             gunOrientation *= Quaternion.CreateFromAxisAngle(new Vector3(0, 0, 1), -turnAngle);
             gunOrientation.Normalize();
-
+            angle -= turnAngle;
             gun.Transform = Matrix.CreateFromQuaternion(gunOrientation);
+
+            laserFire.Update(gameTime);
+
+            if (angle > (float)(Math.PI * 2))
+            {
+                angle = angle - (float)(Math.PI * 2);
+            }
+            System.Diagnostics.Debug.WriteLine(angle);
         }
 
         /// <summary>
@@ -163,6 +185,36 @@ namespace Project1
             }
         }
 
+        public Matrix BarrelTransform
+        {
+            get
+            {
+                return Matrix.CreateFromQuaternion(barrelOrientation);
+            }
+        }
+
+        public Matrix BulletTransform
+        {
+            get
+            {
+                return Matrix.CreateFromQuaternion(bulletOrientation);
+            }
+        }
+
+        public void FireLaser()
+        {
+            laserLoc = new Vector3(-750f, 131f, 0f);
+            Matrix orientation = GunTransform;
+            
+            Matrix so = Matrix.CreateFromAxisAngle(Vector3.Up, angle);
+
+            Matrix newOr = Matrix.CreateFromAxisAngle(Vector3.Up, (angle - (float)Math.PI/2));
+            Vector3 position = Vector3.Transform(laserLoc, so);
+
+            laserFire.FireLaser(position,newOr);
+            //game.SoundBank.PlayCue("tx0_fire1");
+        }
+
         /// <summary>
         /// This function is called to draw this game component.
         /// </summary>
@@ -170,25 +222,21 @@ namespace Project1
         /// <param name="gameTime"></param>
         public void Draw(GraphicsDeviceManager graphics, GameTime gameTime)
         {
-            DrawModel(Matrix.Identity);
+            DrawModel(Transform);
+            laserFire.Draw(graphics, gameTime);
+            //laserFire.LoadContent(content);
+            laserLoc = gun.Transform.Translation;
+
         }
 
-        public void FireLaser()
-        {/*
-            Vector3 position = Vector3.Transform(laserLoc, Transform);
-            Matrix orientation = Transform;
-            orientation.Translation = Vector3.Zero;
 
-            Vector3 direction = Vector3.TransformNormal(new Vector3(0, 0, 1), orientation);
-
-            laserFire.FireLaser(speed, position, orientation);
-            //game.SoundBank.PlayCue("tx0_fire1");*/
-        }
 
         private void DrawModel(Matrix world)
         {
             Matrix[] transforms = new Matrix[model.Bones.Count];
             model.CopyAbsoluteBoneTransformsTo(transforms);
+
+
 
             foreach (ModelMesh mesh in model.Meshes)
             {

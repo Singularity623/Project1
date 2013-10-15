@@ -18,11 +18,87 @@ namespace Project1
         private Swarm swarm;
 
         private Turret player;
-       // private Grass field;
+        private Grass field;
         private Sky sky;
 
         private BatRigid Bat;
+
         private float lastFireTime;
+
+        /*
+        public GameScreen(Game game)
+            : base(game)
+        {
+            player = new Turret(game);
+            sky = new Sky(game);
+            swarm = new Swarm(game, Matrix.Identity);
+           // field = new Grass(game);
+            Bat = new BatRigid(game);
+            camera = Game.Camera;
+            lastFireTime = 0;
+            //camera.UseChaseCamera = true;
+        }
+
+        public override void Initialize()
+        {
+
+            base.Initialize();
+        }
+        public override void LoadContent(ContentManager content)
+        {
+            player.LoadContent(content);
+            swarm.LoadContent(content);
+            sky.LoadContent(Game.GetContent);
+            //field.LoadContent(Game.GetContent);
+            Bat.LoadContent(content);
+            base.LoadContent(content);
+        }
+        public override void Activate()
+        {
+            base.Activate();
+        }
+        public override void Deactivate()
+        {
+            base.Deactivate();
+        }
+        public override void Update(GameTime gameTime)
+        {
+            player.Update(gameTime);
+
+
+            camera.Center = player.Position;
+
+            camera.DesiredEye = Vector3.Transform(new Vector3(1200, 315, 0), player.Transform);
+            camera.DesiredUp = player.Transform.Up;
+
+            camera.Update(gameTime);
+
+            if (Game.lastState.IsKeyDown(Keys.S))
+            {
+                Game.SetScreen(Game.Screens.Splash);
+            }
+            else if (Game.lastState.IsKeyDown(Keys.T))
+            {
+                Game.SetScreen(Game.Screens.Title);
+            }
+
+            // Control turret rotation
+            if (Game.lastState.IsKeyDown(Keys.Left))
+            {
+                player.TurnRate = -1;
+            }
+            else if (Game.lastState.IsKeyDown(Keys.Right))
+            {
+                player.TurnRate = 1;
+            }
+            else
+            {
+                player.TurnRate = 0;
+            }
+        }
+
+
+        private float lastFireTime;*/
 
 
         public GameScreen(Game game)
@@ -67,7 +143,8 @@ namespace Project1
 
             camera.Center = player.Position;
 
-            camera.DesiredEye = Vector3.Transform(new Vector3(1200,315,0), player.Transform);
+
+            camera.DesiredEye = Vector3.Transform(new Vector3(1200,315,0), Matrix.CreateRotationY(player.Angle));
             camera.DesiredUp = player.Transform.Up;
 
             camera.Update(gameTime);
@@ -94,7 +171,6 @@ namespace Project1
             {
                 player.TurnRate = 0;
             }
-
             //fire
             if (Game.lastState.IsKeyDown(Keys.Space))
             {
@@ -104,6 +180,24 @@ namespace Project1
 
             Bat.Update(gameTime);
             swarm.Update(gameTime);
+
+        
+            // collision for turret
+            Matrix[] transforms = new Matrix[player.Model.Bones.Count];
+            player.Model.CopyAbsoluteBoneTransformsTo(transforms);
+            Matrix xwingTransform = player.Transform;
+
+            foreach (ModelMesh mesh in player.Model.Meshes)
+            {
+                BoundingSphere bs = mesh.BoundingSphere;
+                bs = bs.Transform(transforms[mesh.ParentBone.Index] * xwingTransform);
+                /*if (swarm.TestSphereForCollision(bs))
+                {
+                    this.Reset();
+                }*/
+            }
+
+
             base.Update(gameTime);
         }
         public override void Draw(GameTime gameTime)
